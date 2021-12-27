@@ -1,0 +1,20 @@
+{
+  "name": "code-org",
+  "version": "0.1.0",
+  "description": "Functions from the code.org App Lab that can be implemented as such in any node.js project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code.org"
+  ],
+  "author": "csokolove",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/csokolove/code-org/issues"
+  },
+  "devDependencies": {
+    "glob": "^7.2.0"
+  }
+}
