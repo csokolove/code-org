@@ -1,2 +1,7 @@
 node_modules
 package-lock.json
+tests
+
+# WIP functions
+bin/stopTimedLoop.js
+bin/timedLoop.js

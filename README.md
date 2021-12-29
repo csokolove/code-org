@@ -13,6 +13,7 @@ code-org is a **WIP** module to allow utilization of JavaScript functions from [
 - [Code.org App Lab Docs](https://studio.code.org/docs/applab/)
 *Our endgoal for this project is to have all relevant functions added to this module from App Lab*
 - [GitHub](https://github.com/csokolove/code-org)
+- [Project Map](https://github.com/users/csokolove/projects/1/views/1)
 
 ## Contributing
 
