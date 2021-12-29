@@ -18,4 +18,4 @@ code-org is a **WIP** module to allow utilization of JavaScript functions from [
 ## Contributing
 
 Because this module is so early in development, bugs are almost unavoidable. If you do encounter a bug, please report it by making an issue.
-If you'd like to contribute improvements or additions, submit a PR.
+If you'd like to contribute improvements or additions, make a fork & then PR.
