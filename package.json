@@ -1,6 +1,6 @@
 {
   "name": "code-org",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Functions from the Code.org App Lab that can be implemented as such in any node.js project.",
   "main": "index.js",
   "scripts": {
