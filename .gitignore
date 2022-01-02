@@ -1,7 +1,5 @@
-node_modules
-package-lock.json
-tests
+# Dependencies
+node_modules/
 
-# WIP functions
-bin/stopTimedLoop.js
-bin/timedLoop.js
+# Docs
+out/
