@@ -4,15 +4,12 @@
  * @todo Implement ability to stop individual loops, or all loops
  */
 
-// https://stackoverflow.com/questions/8635502/how-do-i-clear-all-intervals
-// https://stackoverflow.com/questions/8860188/javascript-clear-all-timeouts
-
 const stopTimedLoop = (loop) => {
     if(loop) {
-        if(isNaN(loop)) throw new Error(`Loop ID must be a valid integer`)
-
+        if(isNaN(loop)) throw new Error(`Loop ID must be a valid integer`);
+        clearInterval(loop);
     } else {
-
+        // loop through loopsGenByLib array in timedLoop.js & clearInterval()
     }
 }
 

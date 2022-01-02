@@ -1,8 +1,5 @@
 # Dependencies
 node_modules/
 
-# WIP functions
-src
-
 # Docs
 out/
