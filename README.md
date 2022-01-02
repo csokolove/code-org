@@ -2,11 +2,15 @@
 
 ## About
 
-code-org is a **WIP** module to allow utilization of JavaScript functions from [code.org](https://code.org)'s App Lab to be used in [Node.js](https://nodejs.org) projects.
+code-org is a **WIP** module to allow utilization of JavaScript functions from [Code.org](https://code.org)'s App Lab to be used in [Node.js](https://nodejs.org) projects.
 
 ## Installation
 
 **Installation information coming upon release.**
+
+### Optional packages
+
+- [@code-org/linter](https://github.com/code) to follow the same formatting rules as Code.org's App Lab (`npm i @code.org/linter)
 
 ## Relevant Links
 
