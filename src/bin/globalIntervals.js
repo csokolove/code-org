@@ -7,7 +7,6 @@ let intervals = [];
 
 module.exports = {
     storeInterval: (id) => {
-        // Check if there are any intervals, currently.
         intervals.push(id);
     },
     getAllIntervals: () => {
