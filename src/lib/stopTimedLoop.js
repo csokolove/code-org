@@ -3,7 +3,7 @@
  * @param {Number/Object} loop The value returned by the `timedLoop()` function that you want to stop. If not included, all running timed loops will stop.
  */
 
-const { getAllIntervals } = require('../lib/globalIntervals');
+const { getAllIntervals } = require('../bin/globalIntervals');
 
 // https://stackoverflow.com/questions/8635502/how-do-i-clear-all-intervals
 // https://stackoverflow.com/questions/8860188/javascript-clear-all-timeouts

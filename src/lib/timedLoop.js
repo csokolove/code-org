@@ -4,7 +4,7 @@
  * @param {Function} cb - The callback that handles the response
  */
 
-const { storeInterval } = require('../lib/globalIntervals');
+const { storeInterval } = require('../bin/globalIntervals');
 
 const timedLoop = (ms, cb) => {
     if (!arguments[1]) throw new Error('All parameters are required');
