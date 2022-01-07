@@ -17,7 +17,6 @@ const stopTimedLoop = (loop) => {
         const arr = getAllIntervals();
 
         arr.forEach((id) => {
-            console.log('setInterval ID [allLoops]: ' + id);
             clearInterval(id);
         }); 
     } else {
