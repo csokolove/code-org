@@ -12,15 +12,13 @@ const timedLoop = (ms, cb) => {
     if (typeof ms !== 'number') throw new TypeError('Ms (milliseconds) must be a number');
     if (typeof cb !== 'function') throw new TypeError('The callback must be a function');
 
-    const loopId = Date.now();
+    const loopId = setInterval(cb, ms);
 
     const returnObj = {
         id: loopId,
         interval: ms,
         callback: cb,
-    };
-
-    setInterval(cb, ms);
+    }; 
 
     // Return Timed Loop Object:
     // https://studio.code.org/docs/applab/timedLoop/#:~:text=loop%20is%20repeated.-,returns,-Returns%20a%20timed
