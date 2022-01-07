@@ -8,7 +8,7 @@ const { getAllIntervals } = require('../bin/globalIntervals');
 // https://stackoverflow.com/questions/8635502/how-do-i-clear-all-intervals
 // https://stackoverflow.com/questions/8860188/javascript-clear-all-timeouts
 
-const stopTimedLoop = (loop = false) => {
+const stopTimedLoop = (loop) => {
     if(typeof loop === 'object') {
         clearInterval(loop.id);
     } else if (typeof loop === 'number') {
