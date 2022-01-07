@@ -1,18 +1,24 @@
 /**
  * Stops any running timedLoops, or a specific one if passed in return value of `timedLoop`
- * @param {Number} loop The value returned by the `timedLoop()` function that you want to stop. If not included, all running timed loops will stop.
- * @todo Implement ability to stop individual loops, or all loops
+ * @param {Number/Object} loop The value returned by the `timedLoop()` function that you want to stop. If not included, all running timed loops will stop.
  */
 
 // https://stackoverflow.com/questions/8635502/how-do-i-clear-all-intervals
 // https://stackoverflow.com/questions/8860188/javascript-clear-all-timeouts
 
-const stopTimedLoop = (loop) => {
-    if(loop) {
-        if(isNaN(loop)) throw new Error(`Loop ID must be a valid integer`)
+const stopTimedLoop = (loop = false) => {
+    if(typeof loop === 'object') {
+        clearInterval(loop.id);
+    } else if (typeof loop === 'number') {
+        clearInterval(loop);
+    } else if (!loop) {
+        const arr = getAllIntervals();
 
+        arr.forEach((id) => {
+            clearInterval(id);
+        });
     } else {
-
+        throw new Error(`Expecting timeLoop object, ID or empty parameter to clear all timeLoops.`);
     }
 }
 
