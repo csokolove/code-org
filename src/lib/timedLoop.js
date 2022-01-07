@@ -3,9 +3,9 @@
  * @param {Number} ms - The number of milliseconds to wait before each repetition of the loop
  * @param {Function} cb - The callback that handles the response
  * @todo Implement ability to end loop utilizing stopTimedLoop
- * @todo How to store ID of each interval to be able to stop it
+ * @todo Add interval to loopsGenByLip array
  */
-
+let loopsGenByLib = []; // store any loops created
 const timedLoop = (ms, cb) => {
     if (!arguments[1]) throw new Error('All parameters are required');
 
