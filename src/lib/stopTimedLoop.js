@@ -3,6 +3,8 @@
  * @param {Number/Object} loop The value returned by the `timedLoop()` function that you want to stop. If not included, all running timed loops will stop.
  */
 
+const { getAllIntervals } = require('../lib/globalIntervals');
+
 // https://stackoverflow.com/questions/8635502/how-do-i-clear-all-intervals
 // https://stackoverflow.com/questions/8860188/javascript-clear-all-timeouts
 
@@ -15,8 +17,9 @@ const stopTimedLoop = (loop = false) => {
         const arr = getAllIntervals();
 
         arr.forEach((id) => {
+            console.log('setInterval ID [allLoops]: ' + id);
             clearInterval(id);
-        });
+        }); 
     } else {
         throw new Error(`Expecting timeLoop object, ID or empty parameter to clear all timeLoops.`);
     }

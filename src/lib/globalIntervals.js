@@ -5,16 +5,16 @@
 
 let intervals = [];
 
-const storeInterval = (id) => {
-    // Check if there are any intervals, currently.
-    if (typeof interval === 'undefined') {
-        let intervals = [];
-        intervals.push(id);
-    } else if (typeof interval !== 'undefined') {
-        intervals.push(id);
+module.exports = {
+    storeInterval: (id) => {
+        // Check if there are any intervals, currently.
+        if (typeof interval === 'undefined') {
+            intervals.push(id);
+        } else if (typeof interval !== 'undefined') {
+            intervals.push(id);
+        }
+    },
+    getAllIntervals: () => {
+        return intervals;
     }
-};
-
-const getAllIntervals = () => {
-    return intervals;
 }

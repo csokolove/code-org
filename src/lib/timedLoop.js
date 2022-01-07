@@ -2,9 +2,9 @@
  * Executes the callback everytime a certain number of milliseconds has elapsed
  * @param {Number} ms - The number of milliseconds to wait before each repetition of the loop
  * @param {Function} cb - The callback that handles the response
- * @todo Implement ability to end loop utilizing stopTimedLoop
- * @todo How to store ID of each interval to be able to stop it
  */
+
+const { storeInterval } = require('../lib/globalIntervals');
 
 const timedLoop = (ms, cb) => {
     if (!arguments[1]) throw new Error('All parameters are required');
@@ -13,6 +13,8 @@ const timedLoop = (ms, cb) => {
     if (typeof cb !== 'function') throw new TypeError('The callback must be a function');
 
     const loopId = setInterval(cb, ms);
+
+    storeInterval(loopId);
 
     const returnObj = {
         id: loopId,
