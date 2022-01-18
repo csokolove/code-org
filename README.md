@@ -8,9 +8,9 @@ code-org is a **WIP** module to allow utilization of JavaScript functions from [
 
 **Installation information coming upon release.**
 
-### Optional packages
+### Optional additions
 
-- [@code-org/linter](https://github.com/code) to follow the same formatting rules as Code.org's App Lab (`npm i @code.org/linter)
+- [code-org-linter](https://github.com/csokolove/code-org-linter) to follow the same formatting rules as Code.org's App Lab
 
 ## Relevant Links
 
